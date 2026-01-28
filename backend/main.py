@@ -125,7 +125,7 @@ def get_db():
                 # Fallback if no parquet
                 con.execute("""
                     CREATE TABLE movies AS
-                    SELECT *, NULL::VARCHAR as movie_key, NULL::DOUBLE as score, NULL::DOUBLE as reliability 
+                    SELECT *, NULL::VARCHAR  as movie_key, NULL::DOUBLE as score, NULL::DOUBLE as reliability 
                     FROM base_movies
                 """)
 
